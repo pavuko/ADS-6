@@ -10,7 +10,7 @@ class TPQueue {
  public:
   void push(const T& el) {
     auto pos = arr.begin();
-    while (pos != arr.end() && pos->prior>=el.prior) {
+    while (pos != arr.end() && pos->prior >= el.prior) {
       ++pos;
     }
     arr.insert(pos, el);
